@@ -46,7 +46,7 @@ export default function SkillsAndTools() {
           {coreSkills.map((skill) => (
             <div
               key={skill.name}
-              className="flex items-center gap-2 rounded-full bg-indigo-800 px-3 py-1.5 text-xs text-white inset-shadow-sm inset-shadow-indigo-950/75 backdrop-blur-sm md:px-4 md:py-2 md:text-sm"
+              className="flex items-center gap-2 rounded-full bg-indigo-800 px-3 py-1.5 text-xs text-white inset-shadow-sm inset-shadow-black/75 backdrop-blur-sm md:px-4 md:py-2 md:text-sm"
             >
               {skill.icon}
               <span>{skill.name}</span>
@@ -57,7 +57,7 @@ export default function SkillsAndTools() {
           {additionalSkills.map((skill) => (
             <span
               key={skill}
-              className="rounded-full bg-indigo-900/60 px-2 py-0.5 text-xs text-indigo-100 inset-shadow-sm inset-shadow-indigo-950/75 md:px-3 md:py-1 md:text-sm"
+              className="inset-shadow- rounded-full bg-indigo-900/60 px-2 py-0.5 text-xs text-indigo-100 inset-shadow-sm inset-shadow-black/75 md:px-3 md:py-1 md:text-sm"
             >
               {skill}
             </span>

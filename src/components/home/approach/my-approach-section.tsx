@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { approachItems } from "@/lib/approachItems";
+import { approachItems } from "@/lib/approach-items";
 import ApproachItemAccordion from "./approach-item-accordion";
 import { motion } from "framer-motion";
 import PillButton from "@/components/ui/pill-button";

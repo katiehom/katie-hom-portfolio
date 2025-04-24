@@ -3,7 +3,6 @@
 import { IoChevronDownOutline } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
 import type { ApproachItem } from "@/types/approach";
-import { FaLightbulb } from "react-icons/fa6";
 
 interface ApproachItemAccordionProps {
   item: ApproachItem;
@@ -28,11 +27,6 @@ export default function ApproachItemAccordion({
           id={`accordion-button-${item.id}`}
           className="flex w-full cursor-pointer items-center gap-6 rounded-2xl p-2 py-6 pr-3 pl-5 text-left transition-shadow duration-300 ease-in-out hover:bg-indigo-50/30 hover:shadow-lg hover:shadow-indigo-300/50 hover:outline hover:outline-indigo-400/30 focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2"
           onClick={onToggle}
-          // style={{
-          //   background: isOpen
-          //     ? "linear-gradient(to right, transparent, rgba(191, 200, 254, 0.2) 10%, rgba(191, 192, 254, 0.2) 90%, transparent)"
-          //     : "transparent",
-          // }}
         >
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500">
             <Icon className="font-light text-white" />
