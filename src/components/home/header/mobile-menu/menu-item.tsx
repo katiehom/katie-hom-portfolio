@@ -23,7 +23,7 @@ export const MenuItem = ({ item, onClick }: MenuItemProps) => {
       <a href={item.href}>
         <div className="flex items-center">
           <div
-            className={`mr-[20px] grid h-[40px] w-[40px] flex-none basis-[40px] items-center justify-center rounded-full bg-indigo-700 text-lg text-white`}
+            className={`mr-[20px] grid h-[36px] w-[36px] flex-none basis-[36px] items-center justify-center rounded-full bg-indigo-700 text-lg text-white`}
           >
             <Icon />
           </div>

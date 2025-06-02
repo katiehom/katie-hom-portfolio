@@ -25,7 +25,8 @@ export default function ApproachItemAccordion({
           aria-expanded={isOpen ? "true" : "false"}
           aria-controls={`accordion-content-${item.id}`}
           id={`accordion-button-${item.id}`}
-          className="flex w-full cursor-pointer items-center gap-6 rounded-2xl p-2 py-6 pr-3 pl-5 text-left transition-shadow duration-300 ease-in-out hover:bg-indigo-50/30 hover:shadow-lg hover:shadow-indigo-300/50 hover:outline hover:outline-indigo-400/30 focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2"
+          className="flex w-full cursor-pointer items-center gap-6 rounded-2xl p-2 py-6 pr-3 pl-5 text-left transition-shadow duration-300 ease-in-out hover:bg-indigo-50/30 hover:shadow-lg hover:outline hover:outline-indigo-400/30 focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2"
+          // className="flex w-full cursor-pointer items-center gap-6 rounded-2xl p-2 py-6 pr-3 pl-5 text-left transition-shadow duration-300 ease-in-out hover:bg-indigo-50/30 hover:shadow-lg hover:shadow-indigo-300/50 hover:outline hover:outline-indigo-400/30 focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2"
           onClick={onToggle}
         >
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500">
