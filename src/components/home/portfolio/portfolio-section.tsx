@@ -23,7 +23,7 @@ export default function PortfolioSection() {
           {/* {portfolioItems.map((item) => (
                 <ApproachItemDropdown key={item.id} item={item} />
               ))} */}
-          {/* <PortfolioItemsList /> */}
+          <PortfolioItemsList />
         </div>
       </div>
     </section>
