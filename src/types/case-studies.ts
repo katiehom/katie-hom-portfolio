@@ -5,6 +5,12 @@ export interface CaseStudyCardProps {
 	slug: string;
 }
 
+export interface Screenshot {
+  imageUrl: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface CaseStudy {
 	id: number;
   title: string;
@@ -16,5 +22,5 @@ export interface CaseStudy {
   solution: string;
   results: string;
   techStack: string[];
-  screenshots: string[];
+  screenshots: Screenshot[];
 }

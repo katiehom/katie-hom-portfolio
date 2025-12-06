@@ -3,15 +3,19 @@ import { caseStudies } from "@/lib/case-studies";
 import { notFound } from "next/navigation";
 import type { CaseStudy } from "@/types/case-studies";
 
-type Params = { params: { slug: string } };
+type Params = Promise<{ slug: string }>;
 
 export function generateStaticParams() {
-  return caseStudies.map((c) => ({ slug: String(c.id) }));
+  return caseStudies.map((study) => ({
+    slug: study.slug
+  }));
 }
 
-export default function CaseStudyPage({ params }: Params) {
+export default async function CaseStudyPage({ params }: { params: Params }) {
+  const { slug } = await params;
+
   const caseStudy: CaseStudy | undefined = caseStudies.find(
-    (c) => String(c.id) === params.slug
+    (study) => study.slug === slug
   );
 
   if (!caseStudy) return notFound();

@@ -3,7 +3,7 @@ import type { CaseStudy } from "@/types/case-studies";
 export const caseStudies: CaseStudy[] = [
 	{
 		id: 1,
-		slug: "/case-studies/1",
+		slug: "case-study-1",
 		imageUrl: "/images/case-study-1.jpg",
 		title: "Case Study 1",
 		briefDescription: "A brief overview of the first case study.",
@@ -12,11 +12,22 @@ export const caseStudies: CaseStudy[] = [
 		solution: "We designed a clean and intuitive interface that allowed users to easily navigate and interact with the data visualizations.",
 		results: "The new interface led to a 30% increase in user engagement and a 20% decrease in support requests.",
 		techStack: ["React", "Next.js", "TypeScript"],
-    screenshots: ["/images/rivrlinks-1.jpg", "/images/rivrlinks-2.jpg"],
+    screenshots: [
+			{
+				imageUrl: "/images/rivrlinks-1.jpg",
+				alt: "Rivrlinks dashboard showing active affiliate links",
+				caption: "Rivrlinks dashboard displaying the interface for users to interact with their affiliate links"
+			},
+			{
+				imageUrl: "/images/rivrlinks-2.jpg",
+				alt: "Rivrlinks data visualization showing affiliate link performance",
+				caption: "Rivrlinks data visualization showcasing the performance of affiliate links"
+			}
+		],
 	},
 	{
 		id: 2,
-		slug: "/case-studies/2",
+		slug: "case-study-2",
 		imageUrl: "/images/case-study-2.jpg",
 		title: "Case Study 2",
 		briefDescription: "A brief overview of the first case study.",
@@ -25,11 +36,21 @@ export const caseStudies: CaseStudy[] = [
 		solution: "We designed a clean and intuitive interface that allowed users to easily navigate and interact with the data visualizations.",
 		results: "The new interface led to a 30% increase in user engagement and a 20% decrease in support requests.",
 		techStack: ["React", "Next.js", "TypeScript"],
-    screenshots: ["/images/rivrlinks-1.jpg", "/images/rivrlinks-2.jpg"],
-	},
+    screenshots: [
+			{
+				imageUrl: "/images/rivrlinks-1.jpg",
+				alt: "Rivrlinks dashboard showing active affiliate links",
+				caption: "Rivrlinks dashboard displaying the interface for users to interact with their affiliate links"
+			},
+			{
+				imageUrl: "/images/rivrlinks-2.jpg",
+				alt: "Rivrlinks data visualization showing affiliate link performance",
+				caption: "Rivrlinks data visualization showcasing the performance of affiliate links"
+			}
+		],	},
 	{
 		id: 3,
-		slug: "/case-studies/3",
+		slug: "case-study-3",
 		imageUrl: "/images/case-study-3.jpg",
 		title: "Case Study 3",
 		briefDescription: "A brief overview of the first case study.",
@@ -38,7 +59,18 @@ export const caseStudies: CaseStudy[] = [
 		solution: "We designed a clean and intuitive interface that allowed users to easily navigate and interact with the data visualizations.",
 		results: "The new interface led to a 30% increase in user engagement and a 20% decrease in support requests.",
 		techStack: ["React", "Next.js", "TypeScript"],
-    screenshots: ["/images/rivrlinks-1.jpg", "/images/rivrlinks-2.jpg"],
-	},
+    screenshots: [
+			{
+				imageUrl: "/images/rivrlinks-1.jpg",
+				alt: "Rivrlinks dashboard showing active affiliate links",
+				caption: "Rivrlinks dashboard displaying the interface for users to interact with their affiliate links"
+			},
+			{
+				imageUrl: "/images/rivrlinks-2.jpg",
+				alt: "Rivrlinks data visualization showing affiliate link performance",
+				caption: "Rivrlinks data visualization showcasing the performance of affiliate links"
+			}
+		]
+	}
 ]
 
